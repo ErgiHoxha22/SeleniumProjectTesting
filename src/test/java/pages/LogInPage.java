@@ -18,7 +18,7 @@ public class LogInPage {
     @FindBy (xpath= " //input[@placeholder='Password']")
     WebElement pass;
 
-    @FindBy (xpath = " /html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/button[1]")
+    @FindBy (xpath = " //button[normalize-space()='Login']")
     WebElement login1;
 
     public LogInPage (WebDriver driver){
@@ -35,10 +35,9 @@ public class LogInPage {
         this.pass.sendKeys(password);
     }
 
-    public void login() {
+
+
+    public void login1() {
         login1.click();
-}
-
-
-
+    }
 }

@@ -26,8 +26,7 @@ public class ScenarioTest3 extends Hooks {
     public void logintest () {
         driver.get("https://www.automationexercise.com/login");
         logInPage = new LogInPage(driver);
-        logInPage.enterGeneralities("ergihoxha224@gmail.com", "Ergi1234");
-        logInPage.logini();
+        logInPage.enterGeneralities("ergihoxha224@gmail.com", "Ergi1234");logInPage.login1();
         addToCart = new AddToCart(driver);
         addToCart.shtoneshport();
         addToCart.vazhdoblerjen();
