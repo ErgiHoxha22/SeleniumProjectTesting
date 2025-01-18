@@ -24,7 +24,7 @@ public class Hooks  {
     public static void setup() {
         //In case your google version is 102 use chromedriver
         //in case your google version is 107 use chromerdriver2
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver3.exe");
          driver = new ChromeDriver();
          driver.manage().window().maximize();
          driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
